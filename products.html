@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/w3.css">
+</head>
+<body>
+<div class="container">
+<!-----------------------header----------------------------->
+    <header>
+    <div id="logo"><a href="index.html">Phoenix Clothes Collection</a></div>
+    <ul class="nav_menu" >
+       <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+    <div class="clear"></div>
+    </header>
+     <div class="clear"></div>
+    </header>
+    <!--------------heading---------->
+     <div class="products">
+    <h1>PRODUCTS</h1>
+
+        <div class="menu">
+            <ul>
+        <li><a href="women.html">WOMEN'S WEAR<span class="arrow-drop"></span></a>
+       <ul class="dropdown">
+        <li><a href="wclothes.html">CLOTHES</a></li>
+        <li><a href="wshoes.html">SHOES</a></li>
+    </ul>
+    </li>
+        <li><a href="men.html">MEN'S WEAR<span class="arrow-drop"></span></a>
+        <ul class="dropdown">
+        <li><a href="mclothes.html">CLOTHES</a></li>
+        <li><a href="mshoes.html">SHOES</a></li>
+    </ul>
+    </li>
+        <li><a href="kids.html">KID'S WEAR<span class="arrow-drop"></span></a>
+    <ul class="dropdown">
+        <li><a href="girls.html">Girl's Wear</a></li>
+        <li><a href="boys.html">Boy's Wear</a></li>
+    </ul>
+    </li>
+</ul>
+</div>
+</div>
+<br><br><br><br><br><br>
+
+
+<!-----------------------mainBody including slider with image----->
+    <section id="main">
+        <div class="w3-content w3-display-container">
+ <img class="mySlides" src="images/images (8).jpeg" style="width:100%">
+  <img class="mySlides" src="images/images (1).jpeg" style="width:100%">
+   <img class="mySlides" src="images/gkid3.jpeg" style="width:100%">
+  <img class="mySlides" src="images/images (15)2.jpeg" style="width:100%">
+  
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+        <div class="clear"></div>
+    </section>
+    <br>
+    <div class="clear">
+    <!-----------------------------footer--------------------------------->
+    <footer>Copyright &copy;Phoenix Clothes Collection @2019</footer>
+</div>
+</body>
